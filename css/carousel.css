@@ -127,14 +127,14 @@ a:hover {
 }
 .carousel-inner > .item > img {
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   min-width: 100%;
   height: 400px;
   background-size: cover;
   background-position: 0,0;
   background-repeat: no-repeat;
-  opacity: .3;
+  opacity: .9;
 }
 
 /* Styles for specific slides */
@@ -199,14 +199,62 @@ img.fourth-slide {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-/* For X-Small Devices*/
+/* For X-Small Devices like iPhone 3 and 4*/
 @media (max-width: 440px) {
-  /* testing */
+  /* Testing */
   .marketing-top-section {
     background-color: red;
   }
+
+  /*End Testing Section*/
+
+  footer {
+    font-size: 12px;
+  }
+
+  .navbar-brand {
+    font-size: 14px;
+  }
+
+  .carousel h1 {
+    font-size: 26px;
+  }
+
+  .carousel h3 {
+    font-size: 24px;
+  }
+
+  .carousel p{
+    font-size: 16px;
+  }
+
+  .carousel-inner > .item {
+    top: 30px; /*EUREKA! This is what will reposition the carousel inner contents to adjust for navbar changes*/
+  }
+
+  /* Styles for specific slides */
+  img.first-slide{
+      background-image: url("../img/happycouple1-cropped.jpg");
+  }
+
+  img.second-slide {
+      background-image: url("../img/couplefield-xs.jpg");
+  }
+
+  img.third-slide {
+      background-image: url("../img/couplebeach-cropped.jpg");
+  }
+
+  img.fourth-slide {
+      background-image: url("../img/couplesilly-cropped.jpg");
+  }
+
 }
 
+/* For Large Devices resolutions 768-992 
+**(Remember that the default design is for "small" devices
+with resoltions between 440 and 768)**
+*/
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
@@ -237,22 +285,26 @@ img.fourth-slide {
     font-size: 50px;
   }
 
-  /* testing */
+  /* TESTING */
   .marketing-top-section {
     background-color: orange;
   }
+  /* END TESTING SECTION */
 }
 
+/* For Xtra Large Devices with resolutions  992+
+Shouldn't be much different than for large*/
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
   }
 
 
-  /* testing */
+  /* TESTING */
   .marketing-top-section {
     background-color: purple;
   }
+  /* END TESTING SECTION */
 }
 
 /***************** END HTML Tag styling *****************/
