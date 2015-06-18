@@ -18,7 +18,8 @@ and maybe font colors here
 *****************************************/
 /*** Primary Color ***/
 body, footer {
-  background-color: green;
+  background-color: #67851d;
+  color: #67851d;
 }
 
 /*** Secondary Color ***/
@@ -31,7 +32,7 @@ body, footer {
 
 /*** Tertiary Color ***/
 .marketing-botton-section{
-  background-color: #EBF5D6;
+  background-color: #cdda87;
 }
 
 /****************************************
@@ -42,7 +43,6 @@ body, footer {
 body {
   padding-bottom: 40px;
   //color: #5a5a5a;
-  color: green;
 }
 
 footer {
@@ -100,7 +100,7 @@ a:hover {
 }
 
 .carousel h1 {
-  color: green;
+  color: #67851d;
   font-weight: bolder;
   text-shadow: 1px 1px black;
 }
@@ -138,7 +138,7 @@ img.second-slide {
 }
 
 img.third-slide {
-    background-image: url("../img/couplebeach-cropped.jpg");
+    background-image: url("../img/aspengrove.jpg");
 }
 
 img.fourth-slide {
