@@ -59,16 +59,7 @@ a:hover {
   color: lime;
 }
 
-/****************** END HTML Tag styling ******************/
 
-
-/****************** id Tag styling ******************/
-
-
-/***************** END id Tag styling *****************/
-
-
-/****************** Class Tag styling *****************/
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -132,14 +123,14 @@ a:hover {
   min-width: 100%;
   height: 400px;
   background-size: cover;
-  background-position: 0,0;
+  background-position: top;
   background-repeat: no-repeat;
   opacity: .9;
 }
 
 /* Styles for specific slides */
 img.first-slide{
-    background-image: url("../img/happycouple1-cropped.jpg");
+    background-image: url("../img/couplefield.jpg");
 }
 
 img.second-slide {
@@ -234,11 +225,11 @@ img.fourth-slide {
 
   /* Styles for specific slides */
   img.first-slide{
-      background-image: url("../img/happycouple1-cropped.jpg");
+      background-image: url("../img/couplefield-xs.jpg");
   }
 
   img.second-slide {
-      background-image: url("../img/couplefield-xs.jpg");
+      background-image: url("../img/coupleinbed1-cropped.jpg");
   }
 
   img.third-slide {
@@ -306,5 +297,3 @@ Shouldn't be much different than for large*/
   }
   /* END TESTING SECTION */
 }
-
-/***************** END HTML Tag styling *****************/
