@@ -35,14 +35,17 @@ body, footer {
   background-color: #cdda87;
 }
 
+/*possible triadic colors (based on #67851d)
+blue #1D6784
+purple #841D67
+*/
+
 /****************************************
  /Color Scheme
 *****************************************/
 
-/****************** HTML Tag styling ******************/
 body {
   padding-bottom: 40px;
-  //color: #5a5a5a;
 }
 
 footer {
@@ -52,11 +55,18 @@ footer {
 }
 
 a {
-  color: orange;
+  color: #1D6784;
 }
 
 a:hover {
-  color: lime;
+  color: #cdda87;
+}
+
+/* this wrapper div creates side-solumns once the screen gets toa certain size */
+.sitecontent {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
 }
 
 
@@ -165,21 +175,24 @@ img.fourth-slide {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
   border-color: black;
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
+  font-size: 36px;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
 }
 
+
 /* Marketing Sections
 -----------------------------*/
 .marketing-top-section {
-    padding-top: 60px;
+    padding-top: 40px;
+    text-align: center;
 }
 
 .marketing-botton-section{
@@ -240,6 +253,10 @@ img.fourth-slide {
       background-image: url("../img/couplesilly-cropped.jpg");
   }
 
+  .featurette-heading {
+    font-size: 24px;
+  }
+
 }
 
 /* For Large Devices resolutions 768-992 
@@ -273,7 +290,7 @@ with resoltions between 440 and 768)**
   }
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 36px;
   }
 
   /* TESTING */
@@ -287,13 +304,17 @@ with resoltions between 440 and 768)**
 Shouldn't be much different than for large*/
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px;
+    
+  }
+
+  .featurette {
+    margin-top: 60px;
   }
 
 
   /* TESTING */
   .marketing-top-section {
-    background-color: purple;
+    background-color: white;
   }
   /* END TESTING SECTION */
 }
