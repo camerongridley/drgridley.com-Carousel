@@ -18,8 +18,9 @@ and maybe font colors here
 *****************************************/
 /*** Primary Color ***/
 body, footer {
-  background-color: #67851d;
+  background-color: #cdda87;
   color: #67851d;
+  /*dark green #67851d*/
 }
 
 /*** Secondary Color ***/
@@ -32,7 +33,8 @@ body, footer {
 
 /*** Tertiary Color ***/
 .marketing-botton-section{
-  background-color: #cdda87;
+  background-color: white;
+  /*light green #cdda87*/
 }
 
 /*possible triadic colors (based on #67851d)
