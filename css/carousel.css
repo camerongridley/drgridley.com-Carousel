@@ -52,7 +52,6 @@ body {
 
 footer {
   padding-top: 50px;
-  color: white;
   font-size: 16px;
 }
 
@@ -117,10 +116,18 @@ a:hover {
   text-shadow: 1px 1px black;
 }
 
+.carousel h3{
+  color: #2b2e36;
+}
+
+.carousel p {
+  color: white;
+}
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
-  color: white;
+  
 }
 
 /* Declare heights because of positioning of img element */
@@ -156,6 +163,62 @@ img.third-slide {
 img.fourth-slide {
     background-image: url("../img/couplesilly-cropped.jpg");
 }
+
+#about-first-slide {
+  background-image: url("../img/wheatfield2.jpg");
+}
+#about-second-slide {
+  background-image: url("../img/skier.jpg");
+}
+#about-third-slide {
+  background-image: url("../img/wheatfield.jpg");
+}
+#contact-first-slide {
+  background-image: url("../img/wheatfield.jpg");
+}
+#contact-second-slide {
+  background-image: url("../img/mountain-lake.jpg");
+}
+#contact-third-slide {
+  background-image: url("../img/winter-lake.jpg");
+}
+#sex-first-slide {
+  background-image: url("../img/wheatfield.jpg");
+}
+#sex-second-slide {
+  background-image: url("../img/wheatfield.jpg");
+}
+#sex-third-slide {
+  background-image: url("../img/wheatfield.jpg");
+}
+#couple-first-slide {
+  background-image: url("../img/wheatfield.jpg");
+}
+#couple-second-slide {
+  background-image: url("../img/wheatfield.jpg");
+}
+#couple-third-slide {
+  background-image: url("../img/wheatfield.jpg");
+}
+#individual-first-slide {
+  background-image: url("../img/wheatfield.jpg");
+}
+#individual-second-slide {
+  background-image: url("../img/wheatfield.jpg");
+}
+#individual-third-slide {
+  background-image: url("../img/wheatfield.jpg");
+}
+#lgbtq-first-slide {
+  background-image: url("../img/wheatfield.jpg");
+}
+#lgbtq-second-slide {
+  background-image: url("../img/wheatfield.jpg");
+}
+#lgbtq-third-slide {
+  background-image: url("../img/wheatfield.jpg");
+}
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -166,6 +229,7 @@ img.fourth-slide {
 }
 .marketing h2 {
   font-weight: normal;
+  margin-top: 0px;
 }
 .marketing .col-lg-4 p {
   margin-right: 10px;
@@ -189,6 +253,19 @@ img.fourth-slide {
   letter-spacing: -1px;
 }
 
+.featurette-heading h2 {
+
+}
+
+.lead {
+  font-size: 18px;
+  color: #4A4A4A;
+}
+
+#firstfeaturetteimage {
+  padding-top: 20px;
+}
+
 
 /* Marketing Sections
 -----------------------------*/
@@ -199,6 +276,12 @@ img.fourth-slide {
 
 .marketing-botton-section{
 
+}
+
+
+#googlemap > p > iframe {
+  width: 425px;
+  height: 350px;
 }
 
 
@@ -259,6 +342,19 @@ img.fourth-slide {
     font-size: 24px;
   }
 
+  .lead {
+    font-size: 14px;
+  }
+
+  #firstfeaturetteimage {
+  padding-top: 0px;
+  }
+
+  #googlemap > p > iframe {
+    width: auto;
+    height: auto;
+  }
+
 }
 
 /* For Large Devices resolutions 768-992 
@@ -295,6 +391,10 @@ with resoltions between 440 and 768)**
     font-size: 36px;
   }
 
+  #firstfeaturetteimage {
+  padding-top: 40px;
+}
+
   /* TESTING */
   .marketing-top-section {
     background-color: orange;
@@ -310,7 +410,7 @@ Shouldn't be much different than for large*/
   }
 
   .featurette {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
 
