@@ -21,6 +21,7 @@ body, footer {
   background-color: #cdda87;
   color: #67851d;
   /*dark green #67851d*/
+  font-family: 'Pontano Sans', sans-serif;
 }
 
 /*** Secondary Color ***/
@@ -60,7 +61,7 @@ a {
 }
 
 a:hover {
-  color: #cdda87;
+  color: #841D67;
 }
 
 /* this wrapper div creates side-solumns once the screen gets toa certain size */
@@ -111,6 +112,7 @@ a:hover {
 }
 
 .carousel h1 {
+  font-size: 42px;
   color: #67851d;
   font-weight: bolder;
   text-shadow: 1px 1px black;
@@ -118,6 +120,7 @@ a:hover {
 
 .carousel h3{
   color: #2b2e36;
+  font-weight: bold;
 }
 
 .carousel p {
@@ -127,7 +130,7 @@ a:hover {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
-  
+  bottom: 30px;
 }
 
 /* Declare heights because of positioning of img element */
@@ -171,7 +174,7 @@ img.fourth-slide {
   background-image: url("../img/skier.jpg");
 }
 #about-third-slide {
-  background-image: url("../img/wheatfield.jpg");
+  background-image: url("../img/mountain-cycling.jpg");
 }
 #contact-first-slide {
   background-image: url("../img/wheatfield.jpg");
@@ -262,10 +265,6 @@ img.fourth-slide {
   color: #4A4A4A;
 }
 
-#firstfeaturetteimage {
-  padding-top: 20px;
-}
-
 
 /* Marketing Sections
 -----------------------------*/
@@ -282,6 +281,12 @@ img.fourth-slide {
 #googlemap > p > iframe {
   width: 425px;
   height: 350px;
+}
+
+#back-to-top{
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 
@@ -317,6 +322,10 @@ img.fourth-slide {
     font-size: 16px;
   }
 
+  .carousel-caption {
+    bottom: 70px;
+  }
+
   .carousel-inner > .item {
     top: 30px; /*EUREKA! This is what will reposition the carousel inner contents to adjust for navbar changes*/
   }
@@ -346,13 +355,14 @@ img.fourth-slide {
     font-size: 14px;
   }
 
-  #firstfeaturetteimage {
-  padding-top: 0px;
-  }
-
   #googlemap > p > iframe {
     width: auto;
     height: auto;
+  }
+
+  #back-to-top {
+    bottom: 0;
+    right: 0;
   }
 
 }
@@ -391,10 +401,6 @@ with resoltions between 440 and 768)**
     font-size: 36px;
   }
 
-  #firstfeaturetteimage {
-  padding-top: 40px;
-}
-
   /* TESTING */
   .marketing-top-section {
     background-color: orange;
@@ -413,6 +419,9 @@ Shouldn't be much different than for large*/
     margin-top: 40px;
   }
 
+  #firstfeaturetteimage {
+  padding-top: 30px;
+  }
 
   /* TESTING */
   .marketing-top-section {
