@@ -28,7 +28,7 @@ body, footer {
   background-color: #cdda87;
   color: #67851d;
   /*dark green #67851d*/
-  font-family: 'Pontano Sans', sans-serif;
+  
 }
 
 /*** Secondary Color ***/
@@ -51,6 +51,7 @@ body, footer {
 
 body {
   padding-bottom: 40px;
+  font-family: 'Pontano Sans', sans-serif;
 }
 
 footer {
@@ -102,6 +103,12 @@ a:hover {
 .navbar-inverse .navbar-brand {
   color: green;
 }
+
+.dropdown-menu>.active>a, 
+  .dropdown-menu>.active>a:hover, 
+  .dropdown-menu>.active>a:focus {
+    background-color: #1D6784;
+  }
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -194,40 +201,40 @@ img.fourth-slide {
   background-image: url("../img/winter-lake.jpg");
 }
 #sex-first-slide {
-  background-image: url("../img/wheatfield.jpg");
+  background-image: url("../img/wheatfield2.jpg");
 }
 #sex-second-slide {
-  background-image: url("../img/wheatfield.jpg");
+  background-image: url("../img/wheatfield2.jpg");
 }
 #sex-third-slide {
-  background-image: url("../img/wheatfield.jpg");
+  background-image: url("../img/wheatfield2.jpg");
 }
 #couple-first-slide {
-  background-image: url("../img/wheatfield.jpg");
+  background-image: url("../img/wheatfield2.jpg");
 }
 #couple-second-slide {
-  background-image: url("../img/wheatfield.jpg");
+  background-image: url("../img/wheatfield2.jpg");
 }
 #couple-third-slide {
-  background-image: url("../img/wheatfield.jpg");
+  background-image: url("../img/wheatfield2.jpg");
 }
 #individual-first-slide {
-  background-image: url("../img/wheatfield.jpg");
+  background-image: url("../img/wheatfield2.jpg");
 }
 #individual-second-slide {
-  background-image: url("../img/wheatfield.jpg");
+  background-image: url("../img/wheatfield2.jpg");
 }
 #individual-third-slide {
-  background-image: url("../img/wheatfield.jpg");
+  background-image: url("../img/wheatfield2.jpg");
 }
 #lgbtq-first-slide {
-  background-image: url("../img/wheatfield.jpg");
+  background-image: url("../img/wheatfield2.jpg");
 }
 #lgbtq-second-slide {
-  background-image: url("../img/wheatfield.jpg");
+  background-image: url("../img/wheatfield2.jpg");
 }
 #lgbtq-third-slide {
-  background-image: url("../img/wheatfield.jpg");
+  background-image: url("../img/wheatfield2.jpg");
 }
 
 /* MARKETING CONTENT
@@ -264,8 +271,9 @@ img.fourth-slide {
   letter-spacing: -1px;
 }
 
-.featurette-heading h2 {
-
+.featurette-heading h3 {
+  font-size: 28px;
+  color: darkgray;
 }
 
 .lead {
