@@ -15,6 +15,13 @@ and open the template in the editor.
 /****************************************
  Color Scheme - Only put background-color 
 and maybe font colors here 
+
+possible triadic colors
+dark green #67851d
+#cdda87
+light green 
+blue #1D6784
+purple #841D67
 *****************************************/
 /*** Primary Color ***/
 body, footer {
@@ -37,11 +44,6 @@ body, footer {
   background-color: white;
   /*light green #cdda87*/
 }
-
-/*possible triadic colors (based on #67851d)
-blue #1D6784
-purple #841D67
-*/
 
 /****************************************
  /Color Scheme
@@ -112,9 +114,10 @@ a:hover {
 }
 
 .carousel h1 {
+  font-family: 'Oxygen', sans-serif;
   font-size: 42px;
   color: #67851d;
-  font-weight: bolder;
+  font-weight: 700;
   text-shadow: 1px 1px black;
 }
 
@@ -150,9 +153,12 @@ a:hover {
   opacity: .9;
 }
 
-/* Styles for specific slides */
+/* index.html uses these specifiers to set carousel images.
+Other pages that want to use the same images need to make
+not to have anything set in the next section where the
+background image is set via the id tag for the specific page*/
 img.first-slide{
-    background-image: url("../img/couplefield.jpg");
+    background-image: url("../img/couplefield-cropped-blurred.jpg");
 }
 
 img.second-slide {
@@ -160,13 +166,15 @@ img.second-slide {
 }
 
 img.third-slide {
-    background-image: url("../img/aspengrove.jpg");
-}
-
-img.fourth-slide {
     background-image: url("../img/couplesilly-cropped.jpg");
 }
 
+img.fourth-slide {
+    background-image: url("../img/couplesilly-cropped-blurred.jpg");
+}
+
+/* Here set custom carousel background images for pages I
+ want to have different backgrounds than index.html */
 #about-first-slide {
   background-image: url("../img/wheatfield2.jpg");
 }
