@@ -13,40 +13,66 @@ and open the template in the editor.
 /* Padding below the footer and lighter body text */
 
 /****************************************
- Color Scheme - Only put background-color 
-and maybe font colors here 
+ COLOR SCHEME - Only put background-color 
+and  font colors here 
 
 possible triadic colors
 dark green #67851d
-#cdda87
-light green 
+light green #cdda87
 blue #1D6784
 purple #841D67
 *****************************************/
-/*** Primary Color ***/
+/****** Primary Color ******/
 body, footer {
-  background-color: #cdda87;
-  color: #67851d;
-  /*dark green #67851d*/
-  
+  color: #674172;
+}
+.navbar-default .navbar-brand {
+  color: #674172;
+}
+.carousel h1 {
+  color: #674172;
 }
 
-/*** Secondary Color ***/
-/* Marketing Sections
------------------------------*/
+/****** Secondary Color ******/
+body, footer {
+  background-color: #DCC6E0;
+}
+
+/****** Tertiary Color ******/
+.dropdown-menu>.active>a, 
+  .dropdown-menu>.active>a:hover, 
+  .dropdown-menu>.active>a:focus {
+    background-color: #1D6784;
+}
+a {
+  color: #1D6784;
+}
+
+/****** Neutrals ******/
+.carousel p {
+  color: white;
+}
 .marketing-top-section {
     background-color: white;
 }
-
-
-/*** Tertiary Color ***/
 .marketing-botton-section{
   background-color: white;
-  /*light green #cdda87*/
+}
+.lead {
+  color: #4A4A4A;
+}
+
+/****** Unassigned ******/
+a:hover {
+  color: #841D67;
+}
+
+.carousel h3{
+  color: #2b2e36;
 }
 
 /****************************************
- /Color Scheme
+ /COLOR SCHEME
 *****************************************/
 
 body {
@@ -57,14 +83,6 @@ body {
 footer {
   padding-top: 50px;
   font-size: 16px;
-}
-
-a {
-  color: #1D6784;
-}
-
-a:hover {
-  color: #841D67;
 }
 
 /* this wrapper div creates side-solumns once the screen gets toa certain size */
@@ -100,16 +118,6 @@ a:hover {
   width: auto;
 }
 
-.navbar-inverse .navbar-brand {
-  color: green;
-}
-
-.dropdown-menu>.active>a, 
-  .dropdown-menu>.active>a:hover, 
-  .dropdown-menu>.active>a:focus {
-    background-color: #1D6784;
-  }
-
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -123,19 +131,14 @@ a:hover {
 .carousel h1 {
   font-family: 'Oxygen', sans-serif;
   font-size: 42px;
-  color: #67851d;
   font-weight: 700;
   text-shadow: 1px 1px black;
 }
 
 .carousel h3{
-  color: #2b2e36;
   font-weight: bold;
 }
 
-.carousel p {
-  color: white;
-}
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -153,7 +156,7 @@ a:hover {
   height: 400px;
   background-color: #777;
 }
-.carousel-inner > .item > img {
+.carousel-inner .item img {
   position: absolute;
   top: 0px;
   left: 0;
@@ -163,7 +166,14 @@ a:hover {
   background-position: top;
   background-repeat: no-repeat;
   opacity: .9;
+  /*filters are expensive - consider carefully*/
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px); 
+  -o-filter: blur(1px); 
+  -ms-filter: blur(1px);
+  filter: blur(1px);
 }
+
 
 
 /* default carousel images.
@@ -171,7 +181,7 @@ if a page doesn't specify the use of ither images
 in the section below this one, then these images
 will be used*/
 img.first-slide{
-    background-image: url("../img/carousel/winding-road.jpg");
+  background-image: url("../img/carousel/winding-road.jpg");
 }
 
 img.second-slide {
@@ -193,13 +203,13 @@ img.fourth-slide {
   background-image: url("../img/carousel/wheatfield.jpg");
 }
 #index-second-slide {
-  background-image: url("../img/carousel/coupleinbed1-cropped.jpg");
+  background-image: url("../img/carousel/coupleinbed.jpg");
 }
 #index-third-slide {
-  background-image: url("../img/carousel/couplefield-cropped-blurred.jpg");
+  background-image: url("../img/carousel/couplefield-cropped.jpg");
 }
 #index-fourth-slide {
-  background-image: url("../img/carousel/couplesilly-cropped-blurred.jpg");
+  background-image: url("../img/carousel/couplesilly.jpg");
 }
 /*
 #about-first-slide {
@@ -234,7 +244,7 @@ img.fourth-slide {
   background-image: url("../img/carousel/couple-staring.jpg");
 }
 #couple-second-slide {
-  background-image: url("../img/carousel/gay-couple-bench.png");
+  background-image: url("../img/carousel/gay-couple-bench.jpg");
 }
 #couple-third-slide {
   background-image: url("../img/carousel/wheatfield.jpg");
@@ -243,10 +253,10 @@ img.fourth-slide {
   background-image: url("../img/carousel/sunset.jpg");
 }
 #individual-second-slide {
-  background-image: url("../img/carousel/mountain-cycling.jpg");
+  background-image: url("../img/carousel/mountain-cycling2.jpg");
 }
 #individual-third-slide {
-  background-image: url("../img/carousel/mindful-woman.png");
+  background-image: url("../img/carousel/mindful-woman.jpg");
 }
 #lgbtq-first-slide {
   background-image: url("../img/carousel/gay-couple.jpg");
@@ -294,12 +304,10 @@ img.fourth-slide {
 
 .featurette-heading h3 {
   font-size: 28px;
-  color: darkgray;
 }
 
 .lead {
   font-size: 18px;
-  color: #4A4A4A;
 }
 
 img.featurette-image{
@@ -460,9 +468,9 @@ Shouldn't be much different than for large*/
     margin-top: 40px;
   }
 
-  /* TESTING */
+  /* TESTING
   .marketing-top-section {
     background-color: white;
-  }
+  } */
   /* END TESTING SECTION */
 }
