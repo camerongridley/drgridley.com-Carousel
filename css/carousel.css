@@ -140,6 +140,11 @@ a:hover {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+  bottom: 60px;
+}
+
+/*carousels with button or an H3 line need less spacing from the bottom*/
+.carousel-caption-titleslide {
   bottom: 30px;
 }
 
@@ -160,81 +165,97 @@ a:hover {
   opacity: .9;
 }
 
-/* index.html uses these specifiers to set carousel images.
-Other pages that want to use the same images need to make
-not to have anything set in the next section where the
-background image is set via the id tag for the specific page*/
+
+/* default carousel images.
+if a page doesn't specify the use of ither images
+in the section below this one, then these images
+will be used*/
 img.first-slide{
-    background-image: url("../img/couplefield-cropped-blurred.jpg");
+    background-image: url("../img/carousel/winding-road.jpg");
 }
 
 img.second-slide {
-    background-image: url("../img/coupleinbed1-cropped.jpg");
+    background-image: url("../img/carousel/aspen-grove-snowy.jpg");
 }
 
 img.third-slide {
-    background-image: url("../img/couplesilly-cropped.jpg");
+    background-image: url("../img/carousel/sunset.jpg");
 }
 
 img.fourth-slide {
-    background-image: url("../img/couplesilly-cropped-blurred.jpg");
+    background-image: url("../img/carousel/winter-lake.jpg");
 }
 
 /* Here set custom carousel background images for pages I
- want to have different backgrounds than index.html */
+ want to have different backgrounds than the defaults above */
+
+#index-first-slide {
+  background-image: url("../img/carousel/wheatfield.jpg");
+}
+#index-second-slide {
+  background-image: url("../img/carousel/coupleinbed1-cropped.jpg");
+}
+#index-third-slide {
+  background-image: url("../img/carousel/couplefield-cropped-blurred.jpg");
+}
+#index-fourth-slide {
+  background-image: url("../img/carousel/couplesilly-cropped-blurred.jpg");
+}
+/*
 #about-first-slide {
-  background-image: url("../img/wheatfield2.jpg");
+  background-image: url("../img/carousel/wheatfield.jpg");
 }
 #about-second-slide {
-  background-image: url("../img/skier.jpg");
+  background-image: url("../img/carousel/skier.jpg");
 }
 #about-third-slide {
-  background-image: url("../img/mountain-cycling.jpg");
+  background-image: url("../img/carousel/mountain-cycling.jpg");
 }
 #contact-first-slide {
-  background-image: url("../img/wheatfield.jpg");
+  background-image: url("../img/carousel/wheatfield.jpg");
 }
 #contact-second-slide {
-  background-image: url("../img/mountain-lake.jpg");
+  background-image: url("../img/carousel/mountain-lake.jpg");
 }
 #contact-third-slide {
-  background-image: url("../img/winter-lake.jpg");
+  background-image: url("../img/carousel/winter-lake.jpg");
 }
+*/
 #sex-first-slide {
-  background-image: url("../img/wheatfield2.jpg");
+  background-image: url("../img/carousel/couple-in-bed-playful.jpg");
 }
 #sex-second-slide {
-  background-image: url("../img/wheatfield2.jpg");
+  background-image: url("../img/carousel/happycouple1-cropped.jpg");
 }
 #sex-third-slide {
-  background-image: url("../img/wheatfield2.jpg");
+  background-image: url("../img/carousel/couple-feet-in-bed.jpg");
 }
 #couple-first-slide {
-  background-image: url("../img/wheatfield2.jpg");
+  background-image: url("../img/carousel/couple-staring.jpg");
 }
 #couple-second-slide {
-  background-image: url("../img/wheatfield2.jpg");
+  background-image: url("../img/carousel/gay-couple-bench.png");
 }
 #couple-third-slide {
-  background-image: url("../img/wheatfield2.jpg");
+  background-image: url("../img/carousel/wheatfield.jpg");
 }
 #individual-first-slide {
-  background-image: url("../img/wheatfield2.jpg");
+  background-image: url("../img/carousel/sunset.jpg");
 }
 #individual-second-slide {
-  background-image: url("../img/wheatfield2.jpg");
+  background-image: url("../img/carousel/mountain-cycling.jpg");
 }
 #individual-third-slide {
-  background-image: url("../img/wheatfield2.jpg");
+  background-image: url("../img/carousel/mindful-woman.png");
 }
 #lgbtq-first-slide {
-  background-image: url("../img/wheatfield2.jpg");
+  background-image: url("../img/carousel/gay-couple.jpg");
 }
 #lgbtq-second-slide {
-  background-image: url("../img/wheatfield2.jpg");
+  background-image: url("../img/carousel/lesbian-couple.jpg");
 }
 #lgbtq-third-slide {
-  background-image: url("../img/wheatfield2.jpg");
+  background-image: url("../img/carousel/gay-parents.jpg");
 }
 
 /* MARKETING CONTENT
@@ -281,6 +302,10 @@ img.fourth-slide {
   color: #4A4A4A;
 }
 
+img.featurette-image{
+  border-radius: 25px;
+}
+
 
 /* Marketing Sections
 -----------------------------*/
@@ -289,8 +314,8 @@ img.fourth-slide {
     text-align: center;
 }
 
-.marketing-botton-section{
-
+.marketing-botton-section li{
+  font-size: 18px
 }
 
 
@@ -311,10 +336,10 @@ img.fourth-slide {
 
 /* For X-Small Devices like iPhone 3 and 4*/
 @media (max-width: 440px) {
-  /* Testing */
+  /* Testing
   .marketing-top-section {
     background-color: red;
-  }
+  } */
 
   /*End Testing Section*/
 
@@ -348,19 +373,19 @@ img.fourth-slide {
 
   /* Styles for specific slides */
   img.first-slide{
-      background-image: url("../img/couplefield-xs.jpg");
+      background-image: url("../img/carousel/couplefield-xs.jpg");
   }
 
   img.second-slide {
-      background-image: url("../img/coupleinbed1-cropped.jpg");
+      background-image: url("../img/carousel/coupleinbed1-cropped.jpg");
   }
 
   img.third-slide {
-      background-image: url("../img/couplebeach-cropped.jpg");
+      background-image: url("../img/carousel/couplebeach-cropped.jpg");
   }
 
   img.fourth-slide {
-      background-image: url("../img/couplesilly-cropped.jpg");
+      background-image: url("../img/carousel/couplesilly-cropped.jpg");
   }
 
   .featurette-heading {
@@ -417,10 +442,10 @@ with resoltions between 440 and 768)**
     font-size: 36px;
   }
 
-  /* TESTING */
+  /* TESTING 
   .marketing-top-section {
     background-color: orange;
-  }
+  }*/
   /* END TESTING SECTION */
 }
 
@@ -433,10 +458,6 @@ Shouldn't be much different than for large*/
 
   .featurette {
     margin-top: 40px;
-  }
-
-  #firstfeaturetteimage {
-  padding-top: 30px;
   }
 
   /* TESTING */
