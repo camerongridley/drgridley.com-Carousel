@@ -21,21 +21,22 @@ dark green #67851d
 light green #cdda87
 blue #1D6784
 purple #841D67
+light purple #DCC6E0
 *****************************************/
 /****** Primary Color ******/
 body, footer {
-  color: #674172;
+  color: #67851d;
 }
 .navbar-default .navbar-brand {
-  color: #674172;
+  color: #67851d;
 }
 .carousel h1 {
-  color: #674172;
+  color: #fff;
 }
 
 /****** Secondary Color ******/
 body, footer {
-  background-color: #DCC6E0;
+  background-color: #cdda87;
 }
 
 /****** Tertiary Color ******/
@@ -45,7 +46,11 @@ body, footer {
     background-color: #1D6784;
 }
 a {
-  color: #1D6784;
+  color: #67851d;
+}
+
+a:focus {
+  color: #67851d;
 }
 
 /****** Neutrals ******/
@@ -64,15 +69,15 @@ a {
 
 /****** Unassigned ******/
 a:hover {
-  color: #841D67;
+  color: black;
 }
 
 .carousel h3{
-  color: #2b2e36;
+  color: #cdda87;
 }
 
 /****************************************
- /COLOR SCHEME
+ /END COLOR SCHEME
 *****************************************/
 
 body {
@@ -87,7 +92,7 @@ footer {
 
 /* this wrapper div creates side-solumns once the screen gets toa certain size */
 .sitecontent {
-  max-width: 1200px;
+  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -118,6 +123,12 @@ footer {
   width: auto;
 }
 
+.navbar a{
+  font-size: 16px;
+}
+
+
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -130,7 +141,7 @@ footer {
 
 .carousel h1 {
   font-family: 'Oxygen', sans-serif;
-  font-size: 42px;
+  font-size: 34px;
   font-weight: 700;
   text-shadow: 1px 1px black;
 }
@@ -163,15 +174,17 @@ footer {
   min-width: 100%;
   height: 400px;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
-  opacity: .9;
+  opacity: .7;
+
+
   /*filters are expensive - consider carefully*/
-  -webkit-filter: blur(1px);
-  -moz-filter: blur(1px); 
-  -o-filter: blur(1px); 
-  -ms-filter: blur(1px);
-  filter: blur(1px);
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px); 
+  -o-filter: blur(2px); 
+  -ms-filter: blur(2px);
+  filter: blur(2px);
 }
 
 
@@ -181,9 +194,10 @@ if a page doesn't specify the use of ither images
 in the section below this one, then these images
 will be used*/
 img.first-slide{
-  background-image: url("../img/carousel/winding-road.jpg");
+  background-image: url("../img/carousel/main.jpg");
 }
 
+/*
 img.second-slide {
     background-image: url("../img/carousel/aspen-grove-snowy.jpg");
 }
@@ -195,10 +209,12 @@ img.third-slide {
 img.fourth-slide {
     background-image: url("../img/carousel/winter-lake.jpg");
 }
+*/
 
 /* Here set custom carousel background images for pages I
  want to have different backgrounds than the defaults above */
 
+/* Should I decide to bring the carousel back, uncomment them.
 #index-first-slide {
   background-image: url("../img/carousel/wheatfield.jpg");
 }
@@ -214,7 +230,9 @@ img.fourth-slide {
 #index-fifth-slide {
   background-image: url("../img/carousel/gay-couple3.jpg");
 }
-/*
+*/
+
+/* while these are commented out, the default images specified above will be used
 #about-first-slide {
   background-image: url("../img/carousel/wheatfield.jpg");
 }
@@ -234,6 +252,8 @@ img.fourth-slide {
   background-image: url("../img/carousel/winter-lake.jpg");
 }
 */
+
+/*
 #sex-first-slide {
   background-image: url("../img/carousel/couple-in-bed-playful.jpg");
 }
@@ -270,6 +290,7 @@ img.fourth-slide {
 #lgbtq-third-slide {
   background-image: url("../img/carousel/gay-parents.jpg");
 }
+*/
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -311,6 +332,7 @@ img.fourth-slide {
 
 .lead {
   font-size: 18px;
+  text-align: justify;
 }
 
 img.featurette-image{
@@ -325,8 +347,13 @@ img.featurette-image{
     text-align: center;
 }
 
+.marketing-botton-section{
+  padding-right:50px;
+  padding-left: 50px;
+}
+
 .marketing-botton-section li{
-  font-size: 18px
+  font-size: 18px;
 }
 
 
@@ -353,6 +380,14 @@ img.featurette-image{
   } */
 
   /*End Testing Section*/
+
+  /*This is mainly for the Google Map on contact.html*/
+  iframe {
+    height: 200px;
+    width: 200px;
+    resize: both;
+    overflow: auto;
+  }
 
   footer {
     font-size: 12px;
@@ -384,7 +419,7 @@ img.featurette-image{
 
   /* Styles for specific slides */
   img.first-slide{
-      background-image: url("../img/carousel/couplefield-xs.jpg");
+      background-image: url("../img/carousel/main.jpg");
   }
 
   img.second-slide {
@@ -404,12 +439,16 @@ img.featurette-image{
   }
 
   .lead {
-    font-size: 14px;
+    font-size: 18px;
   }
 
-  #googlemap > p > iframe {
-    width: auto;
-    height: auto;
+  .marketing-botton-section{
+  padding-right:20px;
+  padding-left: 20px;
+  }
+
+  .marketing-botton-section ul {
+    padding-left: 25px;
   }
 
   #back-to-top {
@@ -442,11 +481,19 @@ with resoltions between 440 and 768)**
     border-radius: 4px;
   }
 
+  .carousel h1{
+    font-size: 38px;
+  }
+
   /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
+  }
+
+  .container{
+    width: auto;
   }
 
   .featurette-heading {
@@ -463,6 +510,15 @@ with resoltions between 440 and 768)**
 /* For Xtra Large Devices with resolutions  992+
 Shouldn't be much different than for large*/
 @media (min-width: 992px) {
+  
+  .container{
+    width: auto;
+  }
+
+  .carousel h1{
+    font-size: 42px;
+  }
+
   .featurette-heading {
     
   }
