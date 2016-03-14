@@ -36,7 +36,7 @@ body, footer {
 
 /****** Secondary Color ******/
 body, footer {
-  background-color: #cdda87;
+  background-color: lightgray;
 }
 
 /****** Tertiary Color ******/
@@ -92,7 +92,7 @@ footer {
 
 /* this wrapper div creates side-solumns once the screen gets toa certain size */
 .sitecontent {
-  max-width: 1000px;
+  /*max-width: 1200px;*/
   position: relative;
   margin: auto;
 }
@@ -103,6 +103,9 @@ footer {
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
+  max-width: 1200px;
+  margin-left: auto ;
+  margin-right: auto ;
   position: absolute;
   top: 0;
   right: 0;
@@ -398,11 +401,11 @@ img.featurette-image{
   }
 
   .carousel h1 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .carousel h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .carousel p{
