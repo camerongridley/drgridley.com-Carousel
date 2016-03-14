@@ -45,8 +45,16 @@ body, footer {
   .dropdown-menu>.active>a:focus {
     background-color: #1D6784;
 }
+
 a {
   color: #67851d;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a, 
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover, 
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
+    color: #fff;
+    background-color: #1D6784;
 }
 
 a:focus {
@@ -69,7 +77,7 @@ a:focus {
 
 /****** Unassigned ******/
 a:hover {
-  color: black;
+  color: slategray;
 }
 
 .carousel h3{
@@ -90,9 +98,9 @@ footer {
   font-size: 16px;
 }
 
-/* this wrapper div creates side-solumns once the screen gets toa certain size */
+/* this wrapper div creates side-solumns once the screen gets to a certain size as specifed by max-width.  If max-width is commented out then the site will fill the whole screen */
 .sitecontent {
-  /*max-width: 1200px;*/
+  /*max-width: 1200px;  */
   position: relative;
   margin: auto;
 }
@@ -146,13 +154,17 @@ footer {
   font-family: 'Oxygen', sans-serif;
   font-size: 34px;
   font-weight: 700;
-  text-shadow: 1px 1px black;
+  text-shadow: 2px 2px 5px black;
 }
 
 .carousel h3{
   font-weight: bold;
+  text-shadow: 2px 2px 4px black;
 }
 
+.carousel p{
+  text-shadow: 1px 1px 3px black;
+}
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -179,15 +191,15 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: .7;
+  opacity: .8;
 
 
-  /*filters are expensive - consider carefully*/
+  /*filters are expensive - consider carefully - just blur the actual image instead in an editor
   -webkit-filter: blur(2px);
   -moz-filter: blur(2px); 
   -o-filter: blur(2px); 
   -ms-filter: blur(2px);
-  filter: blur(2px);
+  filter: blur(2px);*/
 }
 
 
@@ -400,6 +412,11 @@ img.featurette-image{
     font-size: 14px;
   }
 
+  .dropdown-menu>.active>a, 
+  .dropdown-menu>.active>a:hover, 
+  .dropdown-menu>.active>a:focus {
+    background-color: #1D6784;
+
   .carousel h1 {
     font-size: 28px;
   }
@@ -477,6 +494,13 @@ with resoltions between 440 and 768)**
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a, 
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover, 
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
+    color: #fff;
+    background-color: #1D6784;
   }
 
   /* The navbar becomes detached from the top, so we round the corners */
