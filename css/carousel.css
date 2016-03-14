@@ -91,6 +91,7 @@ a:hover {
 body {
   padding-bottom: 40px;
   font-family: 'Pontano Sans', sans-serif;
+  font-size: 18px;
 }
 
 footer {
@@ -182,6 +183,7 @@ footer {
   height: 400px;
   background-color: #777;
 }
+
 .carousel-inner .item img {
   position: absolute;
   top: 0px;
@@ -412,11 +414,6 @@ img.featurette-image{
     font-size: 14px;
   }
 
-  .dropdown-menu>.active>a, 
-  .dropdown-menu>.active>a:hover, 
-  .dropdown-menu>.active>a:focus {
-    background-color: #1D6784;
-
   .carousel h1 {
     font-size: 28px;
   }
@@ -426,7 +423,7 @@ img.featurette-image{
   }
 
   .carousel p{
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .carousel-caption {
@@ -494,13 +491,6 @@ with resoltions between 440 and 768)**
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0;
-  }
-
-  .navbar-default .navbar-nav .open .dropdown-menu>.active>a, 
-  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover, 
-  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
-    color: #fff;
-    background-color: #1D6784;
   }
 
   /* The navbar becomes detached from the top, so we round the corners */
