@@ -414,6 +414,16 @@ img.featurette-image{
     font-size: 14px;
   }
 
+/*-increase navbar menu size for small displays-*/
+  .navbar a {
+    font-size: 18px;
+  }
+
+  .navbar-nav .open .dropdown-menu>li>a {
+    line-height: 30px;
+  }
+  /*----*/
+
   .carousel h1 {
     font-size: 28px;
   }
